@@ -1,6 +1,6 @@
 {
   "name": "hermes-plugin-ui-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Small UI helpers for Hermes Desktop plugins that the plugin SDK does not ship: theme bridge, live queries, table, hash route, pan and zoom page shell, layered graph layout. Source only, bundled into the plugin by esbuild.",
   "license": "MIT",
   "author": "Senad Ličina <senad@licina.eu>",

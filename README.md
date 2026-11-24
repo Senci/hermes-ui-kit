@@ -1,5 +1,7 @@
 # hermes-plugin-ui-kit
 
+![hermes-plugin-ui-kit](https://raw.githubusercontent.com/Senci/hermes-ui-kit/main/docs/assets/cover.jpg)
+
 Small UI helpers for Hermes Desktop plugins, for what the plugin SDK (`@hermes/plugin-sdk`) does not ship. Source only: a plugin installs it as a build dependency and esbuild bundles the modules it imports into `desktop/plugin.js`. The desktop loader admits only `@hermes/plugin-sdk` and `react*` imports at runtime, so nothing here is resolved on the user's machine.
 
 React and the SDK stay external in the bundle (the host injects them). The modules use plain `createElement`, no JSX, and have no dependencies of their own.
