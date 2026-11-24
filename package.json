@@ -1,0 +1,37 @@
+{
+  "name": "hermes-plugin-ui-kit",
+  "version": "0.1.0",
+  "description": "Small UI helpers for Hermes Desktop plugins that the plugin SDK does not ship: theme bridge, live queries, table, hash route, pan and zoom page shell, layered graph layout. Source only, bundled into the plugin by esbuild.",
+  "license": "MIT",
+  "author": "Senad Ličina <senad@licina.eu>",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.js",
+    "./*.js": "./src/*.js"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "hermes",
+    "hermes-agent",
+    "plugin",
+    "desktop"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Senci/hermes-ui-kit.git"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "check": "node scripts/sdk-exports.mjs && npm pack --dry-run"
+  }
+}
